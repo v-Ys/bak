@@ -1,4 +1,4 @@
-# zprofile: login ,zshenv:
+# zprofile: login ,zshenv: always
 . "$HOME/.profile"
 
 setopt AUTO_CD
