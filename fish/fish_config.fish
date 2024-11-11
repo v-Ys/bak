@@ -26,7 +26,6 @@ if status is-interactive
         #NOTE:" Environment variable
         set -x fish_greeting "Miku! Miku!"
         set -x EDITOR "nvim"
-        # set -x DBUS_SESSION_BUS_ADDRESS "unix:path=$DBUS_LAUNCHD_SESSION_BUS_SOCKET" #???
 
         set -x PATH /Users/Miku/.local/share/nvm/v19.6.0/bin $PATH # nvm.fish (plug) PATH
         # FZF_OPTS: bg+: bottom bar color, fg+: selected item color ,gutter: sidebar color
@@ -41,13 +40,9 @@ if status is-interactive
 
         set -x FZF_DEFAULT_COMMAND "fd --hidden --exclude={Applications,Library,.git,.idea,.vscode,.sass-cache,node_modules,build} --type f"
         # clashx 
-        # set -x https_proxy http://127.0.0.1:7890 
-        # set -x http_proxy http://127.0.0.1:7890 
-        # set -x all_proxy socks5://127.0.0.1:7890
-        # clashx 
-        set -x https_proxy http://127.0.0.1:20171 
-        set -x http_proxy http://127.0.0.1:20171 
-        set -x all_proxy socks5://127.0.0.1:20170
+        set -x https_proxy http://127.0.0.1:7890 
+        set -x http_proxy http://127.0.0.1:7890 
+        set -x all_proxy socks5://127.0.0.1:7890
         # llvm
         set -x PATH /opt/homebrew/opt/llvm/bin $PATH
         set -gx LDFLAGS "-L/opt/homebrew/opt/llvm/lib"
