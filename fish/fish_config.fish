@@ -1,9 +1,4 @@
 if status is-interactive
-        source ~/.config/fish/Miku_func/__yazicd.fish
-        source ~/.config/fish/Miku_func/__fzf_search_history.fish
-        source ~/.config/fish/Miku_func/__fzf_search_directory.fish
-        source ~/.config/fish/Miku_func/condaInit.fish
-        source ~/.config/fish/Miku_func/toggleProxy.fish
 
         #NOTE: alias
         alias  v="nvim"
@@ -15,11 +10,7 @@ if status is-interactive
         alias  lla="eza -l -a"
         alias  zl="yazi"
 
-
-        alias  python="python3"
-
-
-        starship init fish | source
+        #starship init fish | source
         zoxide init fish | source
 
 
@@ -27,7 +18,7 @@ if status is-interactive
         set -x fish_greeting "Miku! Miku!"
         set -x EDITOR "nvim"
 
-        set -x PATH /Users/Miku/.local/share/nvm/v19.6.0/bin $PATH # nvm.fish (plug) PATH
+        #set -x PATH /Users/Miku/.local/share/nvm/v19.6.0/bin $PATH # nvm.fish (plug) PATH
         # FZF_OPTS: bg+: bottom bar color, fg+: selected item color ,gutter: sidebar color
         set -x FZF_DEFAULT_OPTS "--color=bg+:-1,fg+:#BE002F,gutter:-1,border:#C0C0C0 \
                                  --no-separator \
@@ -39,10 +30,6 @@ if status is-interactive
                                             end'" 
 
         set -x FZF_DEFAULT_COMMAND "fd --hidden --exclude={Applications,Library,.git,.idea,.vscode,.sass-cache,node_modules,build} --type f"
-        # clashx 
-        set -x https_proxy http://127.0.0.1:7890 
-        set -x http_proxy http://127.0.0.1:7890 
-        set -x all_proxy socks5://127.0.0.1:7890
         # llvm
         set -x PATH /opt/homebrew/opt/llvm/bin $PATH
         set -gx LDFLAGS "-L/opt/homebrew/opt/llvm/lib"
