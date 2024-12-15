@@ -49,43 +49,7 @@ local vimtex = {
         },
         ft = "tex",
 }
-local lt = {
-        "ianding1/leetcode.vim",
-        config = function()
-                vim.g.leetcode_browser = "chrome"
-                vim.g.leetcode_solution_filetype = "rust"
-        end,
-        cmd = "LeetCodeList",
-}
 
-
-local term = {
-        "akinsho/toggleterm.nvim",
-        version = "*",
-        opts = {
-                size = 20,
-                open_mapping = [[<A-m>]],
-                hide_numbers = true,
-                shade_filetypes = {},
-                shade_terminals = true,
-                shading_factor = 2,
-                start_in_insert = true,
-                insert_mappings = true,
-                persist_size = true,
-                direction = "float",
-                close_on_exit = true,
-                shell = vim.o.shell,
-                float_opts = {
-                        border = "single",
-                        winblend = 0,
-                        highlights = {
-                                border = "Normal",
-                                background = "Normal",
-                        },
-                },
-        },
-        event = "VeryLazy",
-}
 
 local runCode = {
         c = function()

@@ -21,13 +21,8 @@ udp-policy-not-supported-behaviour = REJECT
 [Proxy]
 HK-Y01 = ss, xxx.art, 19273, encrypt-method=xxxx, password=xxx
 [Proxy Group]
-NTHU = select, JP-9929, JP-CN2, HK-CN2, UK-CN2, TW-9929, TW-CN2, SGP-CN2, [2.5x]-UK-9929, [2.5x]-HK-9929, [2.5x]-US-9929, [2.5x]-SGP-9929
-Selected = select, DIRECT, NTHU, HK-Y01, HK-Y02, HK-Y03, HK-Y04, HK-Y05, HK-Y06, HK-Y07, HK-Y08, HK-Y09, HK-Y10, HK-Y11, JP-Y01, JP-Y02, JP-Y03, JP-Y04, JP-Y05, JP-Y06, JP-Y07, JP-Y08, JP-Y09, JP-Y10, TW-Y01, KR-Y01, IN-Y01, SGP-Y01, SGP-Y02, FR-Y01, UK-Y01, DE-Y01, TR-Y01, UA-Y01, RF-Y01, US-Y01, US-Y02, AR-Y01, CA-Y01, AUS-Y01, JP-Free1, JP-Free2, JP-Free3, JP-Free4, JP-Free5, JP-Free6, JP-Y01-Download, JP-Y02-Download
+Selected = select, DIRECT, HK-Y01, HK-Y02
 Download = select, DIRECT, Selected
-Media = select, Selected, DIRECT, HK-Y01, HK-Y02, HK-Y03, HK-Y04, HK-Y05, HK-Y06, HK-Y07, HK-Y08, HK-Y09, HK-Y10, HK-Y11, JP-Y01, JP-Y02, JP-Y03, JP-Y04, JP-Y05, JP-Y06, JP-Y07, JP-Y08, JP-Y09, JP-Y10, TW-Y01, KR-Y01, IN-Y01, SGP-Y01, SGP-Y02, FR-Y01, UK-Y01, DE-Y01, TR-Y01, UA-Y01, RF-Y01, US-Y01, US-Y02, AR-Y01, CA-Y01, AUS-Y01, JP-Y01-Download, JP-Y02-Download
-All-CN = select, DIRECT, Selected
-AM-CN = select, DIRECT, Selected
-Media-CN = select, DIRECT, Selected, HK-Y01, HK-Y02, HK-Y03, HK-Y04, HK-Y05, HK-Y06, HK-Y07, HK-Y08, HK-Y09, HK-Y10, HK-Y11, JP-Y01, JP-Y02, JP-Y03, JP-Y04, JP-Y05, JP-Y06, JP-Y07, JP-Y08, JP-Y09, JP-Y10, TW-Y01, KR-Y01, SGP-Y01, SGP-Y02
 
 [Rule]
 # NOTE: 广告拦截 / 隐私保护 / Malware拦截 / Phiishing拦截
