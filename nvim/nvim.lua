@@ -1,21 +1,3 @@
-local color = {
-        'NvChad/nvim-colorizer.lua',
-        opts = {
-                user_default_options = {
-                        RGB = true,    -- #RGB hex codes
-                        RRGGBB = true, -- #RRGGBB hex codes
-                        names = false,
-                }
-        }
-}
-local groups = {
-        all = {
-                Pmenu = { bg = 'bg0', fg = 'bg0' },
-                CmpDocumentationBorder = { fg = 'bg0', bg = 'bg0', },
-                CmpDocumentation = { fg = 'bg0', bg = 'bg0', },
-        },
-}
-
 local vimtex = {
         "lervag/vimtex",
         config = function()
