@@ -1,4 +1,4 @@
-# zprofile: login ,zshenv: always
+# zprofile: login , zshenv: always
 . "$HOME/.profile"
 
 setopt AUTO_CD
@@ -8,22 +8,6 @@ unsetopt BEEP
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-yy() {
-    tmp="$(mktemp -t "yazi-cwd.XXXXX")"
-    yazi --cwd-file="$tmp"
-    if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-        cd -- "$cwd"
-    fi
-    rm -f -- "$tmp"
-}
-
-venv() {
-    if [ -z "$1" ]; then
-        echo "Error"
-        return 1
-    fi
-    source ~/.vPyEnv/"$1"/bin/activate
-}
 
 __fzf_history__() {
     local selected num
